@@ -4,4 +4,5 @@ LABEL author="wzh" email="wangzihao@huayun.com" purpose="nginx+uwsgi+flask+pytho
 
 COPY ./webtest/ /webtest/
 
-RUN pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple \
+    && pip install flask -i https://pypi.tuna.tsinghua.edu.cn/simple
