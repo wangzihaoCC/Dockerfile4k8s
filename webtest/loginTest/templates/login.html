@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0185)https://oam.crpower.com.cn/oam/server/obrareq.cgi?wh%3DIAMSuiteAgent%20wu%3D%2FCRCPortal%2Findex.jsp%20wo%3D1%20rh%3Dhttps%3A%2F%2Foam.crpower.com.cn%20ru%3D%252FCRCPortal%252Findex.jsp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>login</title>
+
+<meta name="keywords" content="华润，华润登录">
+<meta name="description" content="华润，华润登录,登录">
+<script type="text/javascript" src="{{ url_for('static', filename = 'jquery-1.8.0.min.js') }}" charset="utf-8"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'TimeOutAlert.js') }}" charset="utf-8"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'lo.global.js') }}" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'lo.login.css') }}">	<!-- 公共css -->
+
+
+<script type="text/javascript">
+	function say(){
+		alert("Congratulations ~");
+	}
+</script>
+
+</head>
+<body class="lo_body">
+
+<!-- header -->
+	<div class="lo_header">
+		<div class="lo_inner">
+			<div class="lo_logo">
+				
+					<img src="{{ url_for('static', filename = 'ldap_logo.png') }}" class="logo_left">
+				
+                <span>华润电力统一登录平台</span>
+			</div>
+		</div>
+	</div>
+<!-- header end-->
+<form id="loginData" action="/loginCheck" method="post">
+<!-- content-->
+	<div class="lo_cont">
+		<div class="lo_inner">
+			<div class="lo_con_list">
+				<div class="lo_con_l">
+						<iframe src="{{ url_for('static', filename = 'saved_resource.html') }}" class="lo_frame" border="0" frameborder="no" scrolling="no" height="100%" width="100%" allowtransparency="true"></iframe>
+				</div>
+				
+				<div class="lo_con_r">
+					<div class="lo_con_r_inner">
+						
+						<div class="r_inner_t">
+							
+						</div>
+						
+						<div class="r_inner_text">
+						    <div class="text_name"></div>
+							<div class="text_pass"></div>
+							<input type="text" class="r_text" name="nm" id="Username" autocomplete="off" placeholder="请输入LDAP账户名">
+							
+							<input type="password" class="r_text" name="pw" id="password" autocomplete="off" placeholder="请输入LDAP密码">
+							
+							<div class="lo_caps" id="lo_caps">
+								大小写锁定已打开
+							</div>
+						</div>
+						
+						
+						<div class="r_inner_but">
+							<input type="submit" class="r_button" value="登  录" onclick="say();"  id="btn">
+						</div>
+						
+						<div id="crc_mobileApp" class="r_inner_con">
+							<a href="https://oam.crpower.com.cn/OIMUCS/retrievePwdController/prepareInputName.do?backUrl=https://oam.crpower.com.cn/index.html" class="forget_a">忘记密码？</a>
+							<a href="javascript:;"><span class="forget_a">（扫一扫）</span></a>
+						</div>
+						<div class="r_inner_mima">
+							<div class="code-img">
+								<img src="{{ url_for('static', filename = 'mimapic.png') }}" width="138" height="138">
+								<div class="app_word">移动端<br>找回密码和账户名</div>
+							</div>
+							<div class="arrow"><div class="arrow nei"></div></div>
+						</div>
+						<div class="r_inner_tips">
+							<iframe src="{{ url_for('static', filename = 'index_8672.html') }}" class="lo_frame" border="0" frameborder="no" scrolling="no" height="100%" width="100%" allowtransparency="true"></iframe>
+						</div>
+						
+						<div class="r_inner_mail">
+							<p>服务邮箱：<a href="mailto:crphelpdesk@crpower.com.cn" class="mailcss">crphelpdesk@crpower.com.cn</a>&nbsp;&nbsp;|&nbsp;<a target="_blank" href="https://crinfo.crc.com.cn/Infrastructure/jiagou/ldap_5/answer/201407/t20140714_294876.htm">常见问题</a></p>
+							<p>服务热线：0755-33525501</p>
+							
+						</div>
+						
+						<div id="oTip" name="oTip" style="position:absolute; top:62px; left:86px;DISPLAY:NONE;"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- content end-->
+</form>
+<!-- footer-->
+	<div class="lo_footer">
+		<div class="lo_inner">
+			<div class="foot_info">
+				<span class="foot_span">Copyright © 华润电力控股有限公司 </span><span class="foot_span">技术支持：深圳润联智慧科技有限公司</span>
+			</div>
+		</div>
+	</div>
+<!-- footer end-->
+
+	<div class="right_ad">
+    <iframe src="{{ url_for('static', filename = 'saved_resource(1).html') }}" class="lo_frame" border="0" frameborder="no" scrolling="no" height="100%" width="100%" allowtransparency="true"></iframe>
+    </div>
+
+
+    <script>
+		var url = 'http://oam.crpower.com.cn';
+		var urlTrue = 'https://oam.crpower.com.cn/CRCPortal/index.jsp';
+		var contextPath = '/CRCLogin';
+	</script>	
+	<script type="text/javascript" src="{{ url_for('static', filename = 'login.js') }}" charset="utf-8"></script>
+
+
+</body></html>

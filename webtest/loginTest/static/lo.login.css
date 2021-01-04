@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/*****************
+*
+*这里是注释，以后都以这个为标准
+*本css以公共部分为主，主要是整个项目的通用组件，的编写		
+*name：项目的名称
+*time：2014-10-17
+*BY：kom
+*
+**************************************************/
+
+/******************css重设 ,css reset************************/
+body{font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,arial,tahoma,Verdana,sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, 
+fieldset, input, p, blockquote, table, th, td, embed, object,a {padding: 0;margin: 0;}
+table {border-collapse: collapse; border-spacing: 0;table-layout:fixed; } 
+fieldset,img,iframe{ border: 0;text-decoration:none;} 
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;font-style: normal;} 
+caption, th {text-align:left;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;font-size: 100%;}
+q:before, q:after {content: ”;}
+button, input, select, textarea {font-size: 100%;resize:none;}
+abbr, acronym {border: 0;}
+:focus {outline: 0;}
+a, a:link, a:visited, a:hover, a:active{text-decoration:none;}
+cite, em, dfn { font-style: italic; }
+input[type='button'],input[type='submit'],input[type='reset']{cursor:pointer;vertical-align:middle;}
+input[type='text']{vertical-align:middle;}
+.clearfix{clear:both;}
+.tablefixd{table-layout:fixed;}
+.inlineb{display:inline-block;*display:inline;*zoom:1;}
+.g_mask{width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50);position:absolute;z-index:100;display:none;}
+.g_rgba{background:transparent;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4B000000,endColorstr=#4B000000);zoom: 1;}
+.align_l{text-align:left;}
+.align_c{text-align:center;}
+.align_r{text-align:right;}
+/******************css重设  end ,css reset  end************************/
+
+
+/******************public*公共部分***********************/
+.lo_body{background:#f7f6f4;}
+.lo_header,.lo_cont,.lo_footer{text-align:center;}
+.lo_header{height:100px;background:#fff;}
+.lo_cont{padding-bottom:40px;}
+.lo_footer{height:90px;line-height:90px;background:#fff;width:100%;}
+.lo_inner{width:1000px;text-align:left;margin:0 auto;height:100%;}
+.lo_logo{padding:15px 0px 0px 0px;}
+.foot_info{text-align:center;}
+.foot_span{margin:0px 10px;color:#999;}
+
+/******************public*公共部分 end***********************/
+
+
+/******************content***********************/
+.lo_con_list{margin-top:40px;}
+.lo_frame{background:none;border:none;}
+.lo_con_l{width:550px;float:left;height:440px; margin-top:3px;}
+.lo_con_r{margin-left:565px;height:440px;border:2px solid #eaeaea;background:#fff;border-radius:5px;}
+.lo_con_r_inner{padding:15px 19px;}
+.r_inner_t{height:70px;background:url(2.png) no-repeat;}
+.r_inner_text{height:106px;z-index:20;background:url(../images/login_text.png) no-repeat;margin-top:10px;position:relative;}
+.r_text{display:block;height:20px;text-indent:0px;padding:12px 25px 12px 25px;margin:0px 0px 4px 0px;width:340px;background:transparent;border:1px solid #999; border-radius: 3px;}
+.r_button{width:392px;height:54px;border:none;font-size:24px;color:#fff;font-weight:bold; background-color: orange;}
+.r_inner_con{text-align:right;margin:10px 0px;}
+.r_inner_mima {
+		  display: none;
+		  position: absolute;
+		  top: 0px;
+		    margin-top: 218px;
+			margin-left: 355px;
+		  left: 50%;
+		  z-index: 100;
+		  background: #fff;
+		  border: 1px solid #ccc;
+		}
+.r_inner_mima .code-img {
+		  margin: 2px 2px 2px 2px;
+		}
+.r_inner_mima .code-img .app_word {
+		  text-align: center;font-size:14px;color:#333;word-break: break-all; word-wrap:break-word;margin: 0px,5px,0px,5px;
+		}
+ .r_inner_mima .arrow {
+		  position: absolute;
+		  border-style: solid dashed dashed dashed;
+		  border-width: 10px;
+		  border-color: #ccc transparent transparent  transparent;
+		  height: 0;
+		  width: 0;
+		  left: 50%;
+		}
+.r_inner_mima .nei {
+		  border-top-color: #fff;
+		  top: -11px;
+		  left: -10px;
+		}
+.forget_a{font-size:14px;color:#333;}
+.r_inner_tips{height:84px;background:url(1.png) no-repeat;}
+.tips_show{padding:30px 0px 0px 30px;overflow:hidden;white-space:nowrap;width:336px;height:20px;}
+.tips_show a{color:#474747;}
+.tips_li{height:20px;display:none;}
+.li_show{display:block;}
+.r_inner_mail p{text-align:center;margin:5px 0px 0px 0px;color:#999;font-size:14px;}
+.r_inner_text label{position:absolute;left:45px;color:#999;cursor:text;font-size:14px;}
+.la_name{top:17px;}
+.la_pass{top:64px;}	
+.lo_caps{display:none;}
+
+/******************content end***********************/
+
+.right_ad{ position:fixed; right:0; top:100px; width:100px; height:100px;}
+.logo_left{ float:left;}
+.lo_logo span{ padding:20px 15px; font-size:30px; display:inline-block;}
+.lo_caps{position:absolute;width:103px;height:37px;left:60px;top:80px;background:url(../images/caps.gif) no-repeat;line-height:40px;font-size:12px;text-align:center;}
+.text_name,.text_pass{position:absolute;left:10px;width:31px;height:27px;}
+.text_name{background:url(../images/text_name.png) no-repeat;top:15px;}
+.text_pass{background:url(../images/text_pass.png) no-repeat;top:59px;}
+
+/* WebKit browsers */
+::-webkit-input-placeholder {
+	color: #999;
+}
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+	color: #999;
+	opacity: 1;
+}
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+	color: #999;
+	opacity: 1;
+}
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+	color: #999;
+}
+
+
+.pwd a:link,a:visited{
+	color:#ffaa33;text-decoration:underline;
+}
+.pwd a:hover{
+	color:#F38820;text-decoration:underline;
+}
+#pwd1 a:link,a:visited{
+	color:#ffaa33;text-decoration:underline;
+}
+#pwd1 a:hover{
+	color:#F38820;text-decoration:underline;
+}
+
+.but01{border:0; color:#FFFFFF; line-height:22px; font-weight:bold;
+	background:url(bj_but01.gif) 0 repeat-x;
+	height:20px;
+	width:70px;
+	text-align: center;
+	cursor:pointer;
+}
+
+
+
+
+

